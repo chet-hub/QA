@@ -34,6 +34,9 @@ namespace QA.Data
             string userId1 = "d985a7b1-d58b-4266-ab86-a0a0ff91ccc1";
             string userId2 = "f984066c-816d-4531-bd9a-c63256ca7000";
 
+            // cC(182066202)
+            string password = "AQAAAAEAACcQAAAAEGRqPFKkbruQdNbgz4NIUFNiO7cchHhnpFbx7mTM2esETqm1b07MguuCUDdLD7K4hQ==";
+
             // user and role
             builder.Entity<User>().HasData(new List<User>
             {
@@ -46,8 +49,7 @@ namespace QA.Data
                     Email = "ff@qq.com",
                     NormalizedEmail = "FF@QQ.COM",
                     EmailConfirmed = true,
-                    PasswordHash =
-                        "AQAAAAEAACcQAAAAEMQJrTVkVJiBSAvpCuUKqC3g7BQyCNs1igCObs9zKmTySe8b1gNJ1iFMpviFa++k2w==",
+                    PasswordHash = password,
                     SecurityStamp = "N4Q2NOPGJ5DYCTUU67NCDN6EELEJFO4N",
                     ConcurrencyStamp = "3b3e029c-9d49-4d25-968b-9c3a913d903c",
                     PhoneNumber = null,
@@ -66,8 +68,7 @@ namespace QA.Data
                     Email = "cc861010@gmail.com",
                     NormalizedEmail = "CC861010@GMAIL.COM",
                     EmailConfirmed = true,
-                    PasswordHash =
-                        "AQAAAAEAACcQAAAAEIyzWsOem/kp/V7dgVxg6cmAvcFfC+8zAc0bLT6iOLsm7qMiONewX13Nm3kihjYVvQ==",
+                    PasswordHash = password,
                     SecurityStamp = "USIVDWV4UHHSCT6ZTTJDMSRXHVVU4P2D",
                     ConcurrencyStamp = "714d2b03-873f-479b-9249-4e7ef30866f9",
                     PhoneNumber = null,
@@ -86,8 +87,7 @@ namespace QA.Data
                     Email = "cc@qq.com",
                     NormalizedEmail = "CC@QQ.COM",
                     EmailConfirmed = true,
-                    PasswordHash =
-                        "AQAAAAEAACcQAAAAEL3A1emCK92O5spftjyhQkRYl0VhfVQQGmkmn1QM68AWMzDNoOLXsfXgOmNcpaWprw==",
+                    PasswordHash = password,
                     SecurityStamp = "BNDKY6ICQC3YUUQL5OTFI2277AJY7LGJ",
                     ConcurrencyStamp = "dd5e1fdf-03ea-47f2-84c7-2873d0ae85b9",
                     PhoneNumber = null,

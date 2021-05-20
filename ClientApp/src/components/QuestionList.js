@@ -107,7 +107,7 @@ export class QuestionList extends Component {
     }
 
     async getData(orderBy, offset, tag, done) {
-        GetQuestionsList(orderBy, offset, offset + (10*this.state.pageCount), tag, data => {
+        GetQuestionsList(orderBy, offset, offset + (1*this.state.pageCount), tag, data => {
             
             this.setState(
                 {
